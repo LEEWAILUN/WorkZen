@@ -1,0 +1,189 @@
+/* dashboard.css */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-container {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.dashboard-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f6f8;
+}
+
+.dashboard-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.add-table-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.table-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.table-name {
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.remove-table-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e74c3c;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.expand-collapse-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.remove-row-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e74c3c;
+}
+
+.column-actions {
+  position: relative;
+  display: inline-block;
+}
+
+.column-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.column-menu-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 5px;
+}
+
+.column-actions:hover .column-menu-dropdown {
+  display: block;
+}
+
+.add-subtask-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3498db;
+  padding: 5px 10px;
+}
+
+.table-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-row-btn, .add-column-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.floating-chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.floating-chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 400px;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-chat-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
